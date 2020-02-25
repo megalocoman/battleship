@@ -57,7 +57,8 @@ package tablero;
 			case "c":			
 				while(cantidadDeCarrosC<5) {
 					aux=0;
-					aux2=0;			while ( aux==0 ) {
+					aux2=0;			
+					while ( aux==0 ) {
 						coordenadaX=(int) (Math.random()*15);
 						coordenadaY=(int) (Math.random()*15);					
 						if (tablero[coordenadaX][coordenadaY].equals("")) {		
@@ -68,7 +69,8 @@ package tablero;
 									if (tablero[coordenadaX][i].equals("")) {
 										aux2+=1;
 									}
-								}			if (aux2==2) {			
+								}		
+								if (aux2==2) {			
 									tablero[coordenadaX][coordenadaY]="c";
 									tablero[coordenadaX][coordenadaY+1]="c";
 									aux=1;
@@ -82,7 +84,8 @@ package tablero;
 			case "t":			
 				while(cantidadDeCarrosT<10) {
 					aux=0;
-					aux2=0;			while ( aux==0 ) {
+					aux2=0;			
+					while ( aux==0 ) {
 						coordenadaX=(int) (Math.random()*15);
 						coordenadaY=(int) (Math.random()*15);		
 						if (tablero[coordenadaX][coordenadaY].equals("")) {
