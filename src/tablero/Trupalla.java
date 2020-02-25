@@ -6,9 +6,10 @@ package tablero;
 	String chofer;
 	
 	
-	public Trupalla(int ocupantes, int ingreso, int coordy, int coordx, char tipoveh, int rango, String color, String chofer, int armadura) {
-		super(ocupantes, ingreso, coordy, coordx, tipoveh);
-		
+//	public Trupalla(int ocupantes, int ingreso, int coordy, int coordx, char tipoveh, int rango, String color, String chofer, int armadura) {
+		public Trupalla(int ocupantes, int ingreso, char tipoveh, int rango, String color, String chofer, int armadura) {	
+//		super(ocupantes, ingreso, coordy, coordx, tipoveh);
+		super(ocupantes, ingreso,  tipoveh);
 		this.armadura = armadura;
 		this.chofer = chofer;	
 		}

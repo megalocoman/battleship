@@ -9,25 +9,54 @@ public class Carro {
 	public int coordx;
 	public char tipoveh;
 	
-		public Carro(int ocupantes, int ingreso, int coordy, int coordx, char tipoveh) {
+		public Carro(int ocupantes, int ingreso, char tipoveh) {
 		
 		this.ocupantes = ocupantes;
 		this.ingreso = ingreso;
-		this.coordy = coordy;
-		this.coordx = coordx;
+//		this.coordy = coordy;
+//		this.coordx = coordx;
 		this.tipoveh = tipoveh;
-	}	public int getOcupantes() {
-		return ocupantes;
-	}	public int getIngreso() {
-		return ingreso;
-	}	public int getCoordy() {
-		return coordy;
-	}
-	
-	public int getCoordx() {
-		return coordx;
-	}	public char getTipo() {
-		return tipoveh;
-	}	
+		}
+
+		public int getOcupantes() {
+			return ocupantes;
+		}
+
+		public void setOcupantes(int ocupantes) {
+			this.ocupantes = ocupantes;
+		}
+
+		public int getIngreso() {
+			return ingreso;
+		}
+
+		public void setIngreso(int ingreso) {
+			this.ingreso = ingreso;
+		}
+
+		public int getCoordy() {
+			return coordy;
+		}
+
+		public void setCoordy(int coordy) {
+			this.coordy = coordy;
+		}
+
+		public int getCoordx() {
+			return coordx;
+		}
+
+		public void setCoordx(int coordx) {
+			this.coordx = coordx;
+		}
+
+		public char getTipoveh() {
+			return tipoveh;
+		}
+
+		public void setTipoveh(char tipoveh) {
+			this.tipoveh = tipoveh;
+		}	
+
 }
 

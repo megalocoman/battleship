@@ -48,6 +48,8 @@ public class TableroClase {
 		int Y = 0;
 		int X = 0;
 		int largocarros = 0;
+//		int [][] coorcarro = new int[largocarros][2];
+		
 		if (carros.getTipo()=='K') {
 			X=13;
 			Y=15;
@@ -66,33 +68,41 @@ public class TableroClase {
 			largocarros=1;
 		}
 		
+	
+		
 		while(cantidadDeCarros<largocarros) {
+			int [][] coorcarro = new int[largocarros][2];
 			aux=0;
 			aux2=0;			
 			while ( aux==0 ) {
 				coordenadaX=(int) (Math.random()*X);
-				coordenadaY=(int) (Math.random()*Y);					
-				if (tablerovacio[coordenadaX][coordenadaY]=='o') {		
-					longitud=2;
-					aux2=1;
-					if(coordenadaY<14) {
-						for (int i = coordenadaY+1; i < coordenadaY+longitud; i++) {	
-							if (tablerovacio[coordenadaX][i]=='o') {
-								aux2+=1;
-							}
-						}		
-						if (aux2==2) {			
-							tablerovacio[coordenadaX][coordenadaY]=carros.getTipo();
-							tablerovacio[coordenadaX][coordenadaY+1]=carros.getTipo();
-							aux=1;
-							cantidadDeCarros+=1;			}
-					}else {
+				coordenadaY=(int) (Math.random()*Y);		
+				if (tablerovacio[coordenadaX][coordenadaY]=='o') {
+					
+				}
+					
+					for (int j)
+					
+					
+					
+					
+					
+//				if (tablerovacio[coordenadaX][coordenadaY]=='o') {		
+//						
+//						if (aux2==2) {			
+//							tablerovacio[coordenadaX][coordenadaY]=carros.getTipo();
+//							tablerovacio[coordenadaX][coordenadaY+1]=carros.getTipo();
+//							aux=1;
+//							cantidadDeCarros+=1;			}
+//					}else 
+//				{
 						aux=0;
 					}
+			
 				}
-			}
-		}
+			
 		return;
+	
 	}
 	
 	
