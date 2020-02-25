@@ -14,6 +14,8 @@ public class ExecMain {
 //			}			
 //			System.out.println();
 //		}
+		
+		Carro[] carritos= new Carro[18];
 		Kromi K1 = new Kromi(5, 2002, 'K', 2001, "guanaquin");
 		Kromi K2 = new Kromi(6, 2003, 'K', 2002, "guanaquin");
 		Kromi K3 = new Kromi(7, 2004, 'K', 2004, "guanaquin");
@@ -39,10 +41,28 @@ public class ExecMain {
 		System.out.println(C5.getCoordy());
 		System.out.println(C5.getCoordx());
 		
+		carritos[0]= K1;
+		carritos[1]= K2;
+		carritos[2]= K3;
+		carritos[3]= C1;
+		carritos[4]= C2;
+		carritos[5]= C3;
+		carritos[6]= C4;
+		carritos[7]= C5;
+		carritos[8]= T1;
+		carritos[9]= T2;
+		carritos[10]= T3;
+		carritos[11]= T4;
+		carritos[12]= T5;
+		carritos[13]= T6;
+		carritos[14]= T7;
+		carritos[15]= T8;
+		carritos[16]= T9;
+		carritos[17]= T10;
 		
-		
-		
-		
+		for( int i = 0; i <18;i++) {
+			System.out.println(carritos[i].getTipoveh());
+		}
 	}
 	
 }
